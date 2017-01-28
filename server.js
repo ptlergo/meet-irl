@@ -3,8 +3,9 @@ const express = require('express'),
       bodyParser = require('body-parser'),
       morgan = require('morgan'),
       path = require('path');
+      port = 8080;
 
-app.use(bodyParser/urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use( (req, res, next) => {
@@ -15,3 +16,14 @@ app.use( (req, res, next) => {
   next();
 
 });
+
+app.use(morgan('dev'));
+
+app.use(express.static(__dirname + '/app'));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/index.html'));
+});
+
+app.listen(port);
+console.log('meet-irl running on port: ', port);
