@@ -2,6 +2,31 @@ describe('Users factory', () => {
 
   let Users;
 
+  // Array of users to ttest factory
+  const userList = [
+    {
+      id: '0',
+      name: 'Jane',
+      role: 'Designer',
+      location: 'New York',
+      twitter: 'gijane'
+    },
+    {
+      id: '1',
+      name: 'Bob',
+      role: 'Developer',
+      locationL 'New York',
+      twitter: 'billybob'
+    },
+    {
+      id: '2',
+      name: 'Jim',
+      role: 'Developer',
+      location: 'Chicago',
+      twitter: 'jimbo'
+    }
+  ];
+
   // Before each test load our api.users module
   beforeEach(angular.mock.module('api.users'));
 
