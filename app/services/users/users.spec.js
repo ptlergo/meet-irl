@@ -27,6 +27,15 @@ describe('Users factory', () => {
     }
   ];
 
+  // Single user expected result when calling findById(2)
+  const singleUser = {
+        id: '2',
+        name: 'Jim',
+        role: 'Developer',
+        location: 'Chicago',
+        twitter: 'jimbo'
+      };
+
   // Before each test load our api.users module
   beforeEach(angular.mock.module('api.users'));
 
@@ -67,7 +76,7 @@ describe('Users factory', () => {
     it('should return user object if exists', () => {
       expect(Users.findById(2)).toEqual(singleUser);
     });
-    
+
   });
 
 });
