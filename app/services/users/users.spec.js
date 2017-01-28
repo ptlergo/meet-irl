@@ -77,6 +77,11 @@ describe('Users factory', () => {
       expect(Users.findById('2')).toEqual(singleUser);
     });
 
+    // Test to verify findbyid() call with wrong id will return undefined
+    it('should return undefined if the user cannot be found', () => {
+      expect(Users.findById('ABC')).not.toBeDefined();
+    });
+
   });
 
 });
