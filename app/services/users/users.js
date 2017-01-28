@@ -29,11 +29,17 @@ angular.module('api.users', []).
       }
     ];
 
-    // Define all to pass test
+    // Return all users
     Users.all = () => {
       // Return array of users
       return userList;
     };
+
+    // Define findbyid
+    Users.findById = (id) => {
+
+    };
+
 
     return Users;
   });
