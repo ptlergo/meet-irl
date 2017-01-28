@@ -52,5 +52,15 @@ describe('Users factory', () => {
     it('should return array of users', () => {
       expect(Users.all()).toEqual(userList);
     });
+
   });
+
+  // A set of tests for our Users.findById() method
+  describe('.findById()', () => {
+
+    it('should exist', () => {
+      expect(Users.findById().toBeDefined());
+    });
+  });
+
 });
