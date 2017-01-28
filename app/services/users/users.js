@@ -17,7 +17,7 @@ angular.module('api.users', []).
         id: '1',
         name: 'Bob',
         role: 'Developer',
-        locationL 'New York',
+        location: 'New York',
         twitter: 'billybob'
       },
       {
@@ -31,6 +31,7 @@ angular.module('api.users', []).
 
     // Define all to pass test
     Users.all = () => {
+      // Return array of users
       return userList;
     };
 

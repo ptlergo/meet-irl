@@ -15,7 +15,7 @@ describe('Users factory', () => {
       id: '1',
       name: 'Bob',
       role: 'Developer',
-      locationL 'New York',
+      location: 'New York',
       twitter: 'billybob'
     },
     {
