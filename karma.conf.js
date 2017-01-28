@@ -13,7 +13,7 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
 
-    // list of files / patterns to load in the browser
+    // list of files / patterns to load in the browser in order
     files: [
       './node_modules/angular/angular.js',                             // angular
       './node_modules/angular-ui-router/release/angular-ui-router.js', // ui-router
