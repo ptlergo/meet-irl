@@ -56,11 +56,18 @@ describe('Users factory', () => {
   });
 
   // A set of tests for our Users.findById() method
-  describe('.findById()', () => {
+  describe('.findById(id)', () => {
 
+    // Test if method exists
     it('should exist', () => {
       expect(Users.findById).toBeDefined();
     });
+
+    // Test to verify findById() call with id '2' returns user of id '2'
+    it('should return user object if exists', () => {
+      expect(Users.findById(2)).toEqual(singleUser);
+    });
+    
   });
 
 });
