@@ -74,7 +74,7 @@ describe('Users factory', () => {
 
     // Test to verify findById() call with id '2' returns user of id '2'
     it('should return user object if exists', () => {
-      expect(Users.findById(2)).toEqual(singleUser);
+      expect(Users.findById('2')).toEqual(singleUser);
     });
 
   });

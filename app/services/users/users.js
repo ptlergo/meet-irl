@@ -35,11 +35,13 @@ angular.module('api.users', []).
       return userList;
     };
 
-    // Define findbyid
+    // find single user by id
     Users.findById = (id) => {
-
+      // Returning a single user obj as our test expects
+      return userList.find((user) => {
+        return user.id === id;
+      });
     };
-
 
     return Users;
   });
