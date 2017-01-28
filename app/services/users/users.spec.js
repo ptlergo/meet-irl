@@ -15,4 +15,12 @@ describe('Users factory', () => {
     expect(Users).toBeDefined();
   });
 
+  // A set of tests for our Users.all() method
+  describe('.all()', () => {
+
+    // A simple test to verify the method all exists
+    it('should exist', () => {
+      expect(Users.all).toBeDefined();
+    });
+  });
 });
