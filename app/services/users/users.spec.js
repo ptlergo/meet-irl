@@ -1,4 +1,4 @@
-describe('Users factory', function() {
+describe('Users factory', () => {
 
   let Users;
 
@@ -6,12 +6,12 @@ describe('Users factory', function() {
   beforeEach(angular.mock.module('api.users'));
 
   // Before each test set our injected Users factory (_Users_) to our local Users variable
-  beforeEach(inject(function(_Users_) {
+  beforeEach(inject((_Users_) => {
     Users = _Users_;
   }));
 
   // A simple test to verify the Users factory exists
-  it('should exist', function() {
+  it('should exist', () => {
     expect(Users).toBeDefined();
   });
 

@@ -1,5 +1,5 @@
   angular.module('myApp', ['ui.router']).
-    config(function($urlRouterProvider) {
+    config( ($urlRouterProvider) => {
 
       $urlRouterProvider.otherwise('/');
 
