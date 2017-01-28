@@ -47,5 +47,10 @@ describe('Users factory', () => {
     it('should exist', () => {
       expect(Users.all).toBeDefined();
     });
+
+    // A test to verify all() returns array of users
+    it('should return array of users', () => {
+      expect(Users.all()).toEqual(userList);
+    });
   });
 });
