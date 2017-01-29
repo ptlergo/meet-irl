@@ -8,7 +8,7 @@ npm install
 #GLOBAL INSTALLS
 Install [Karma](https://github.com/karma-runner/karma) globally to run unit test
 ```
-npm install karma -g
+npm install -g karma-cli
 ```
 
 #RUN UNIT TEST
